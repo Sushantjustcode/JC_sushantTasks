@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Adventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .body {
+        font-family: "Bebas Neue", sans-serif !important;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="m-0 bg-[#f5f5f3]">
+    <section class="relative min-h-screen overflow-hidden">
+      <img
+        src="images/hero/Group 24157.png"
+        alt="Adventure guides"
+        class="absolute h-full w-full object-cover object-center"
+      />
+
+      <div
+        class="relative z-10 mx-auto flex min-h-screen container flex-col px-6 lg:px-12"
+      >
+        <!-- NAVBAR -->
+        <header class="flex items-start justify-between pt-5">
+          <img
+            src="images/hero/Mask group.png"
+            alt="Vertical Adventures"
+            class="w-[100px] md:w-[100px] object-fit"
+          />
+
+          <!-- Navigation -->
+          <nav
+            class="font-['Bebas_Neue'] text-lg items-center gap-7 rounded-full bg-white px-7 py-3 text-[12px] shadow-sm md:flex sm:hidden"
+          >
+            <a
+              href="#adventures"
+              class="font-medium text-[#222] hover:text-[#693f27]"
+            >
+              Adventures
+            </a>
+
+            <a
+              href="#webinar"
+              class="font-medium text-[#222] hover:text-[#693f27]"
+            >
+              Webinars
+            </a>
+
+            <a
+              href="#webinar"
+              class="font-medium text-[#222] hover:text-[#693f27]"
+            >
+              Magazines
+            </a>
+
+            <a
+              href="#form"
+              class="rounded-full bg-[#693f27] px-5 py-2 text-white transition hover:bg-[#633a25]"
+            >
+              Sign Up
+            </a>
+          </nav>
+
+          <!-- choti screen button -->
+          <button
+            class="rounded-full bg-white px-5 py-2 text-sm shadow md:hidden"
+          >
+            Menu
+          </button>
+        </header>
+        <div class="flex flex-1 items-center w-full">
+          <div class="mb-24 container mx-auto">
+            <div class="max-w-sm flex flex-col">
+              <h1
+                class="font-['Bebas_Neue'] text-[40px] font-medium leading-[1.12] tracking-tight text-white drop-shadow-sm sm:text-[48px]"
+              >
+                Find Certified Adventure Guides for Every Terrain
+              </h1>
+
+              <!-- Buttons -->
+              <div class="mt-7 flex flex-wrap gap-3">
+                <a
+                  href="#"
+                  class="font-['Bebas_Neue'] rounded-full bg-white px-5 py-2.5 text-[12px] font-medium text-[#333] shadow-sm transition hover:bg-gray-100"
+                >
+                  Explore Guides
+                </a>
+
+                <a
+                  href="#"
+                  class="font-['Bebas_Neue'] rounded-full border border-white/80 bg-white/10 px-5 py-2.5 text-[12px] font-medium text-white bg-transparent transition hover:bg-white hover:text-[#333]"
+                >
+                  Browse Adventures
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- searchbar -->
+          <div
+            class="absolute bottom-12 left-1/2 w-[calc(100%-3rem)] max-w-[870px] -translate-x-1/2"
+          >
+            <div class="flex h-[62px] items-center rounded-xl bg-white p-2">
+              <input
+                type="text"
+                placeholder="Search for adventures worldwide"
+                class="h-full flex-1 bg-transparent px-5 text-[12px] text-gray-700 outline-none placeholder:text-gray-400"
+              />
+
+              <button
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#693f27] text-white transition hover:bg-[#633a25]"
+                aria-label="Search"
+              >
+                <img src="images/hero/search.png" class="h-4 w-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="adventures" class="bg-white py-16 sm:py-20">
+      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- HEADER -->
+        <div class="mb-10 flex items-center justify-between">
+          <h1
+            class="font-['Bebas_Neue'] text-[28px] font-medium tracking-tight text-[#693f27] sm:text-[36px]"
+          >
+            Choose Your Adventure
+          </h1>
+
+          <a
+            href="#"
+            class="rounded-full bg-[#693f27] px-5 py-2 text-[13px] text-white shadow-sm transition hover:bg-[#633a25]"
+          >
+            Browse All
+          </a>
+        </div>
+
+        <!-- CARDS -->
+        <div
+          class="flex gap-5 overflow-x-auto pb-6 sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-5 lg:gap-5 lg:overflow-visible"
+        >
+          <!-- Hiking -->
+          <div class="relative min-w-[150px] pt-[55px] lg:min-w-0">
+            <div
+              class="h-[125px] w-full rounded-[7px] bg-[#e9e1dc] px-3 pt-[48px] text-center"
+            >
+              <h2 class="text-[15px] font-medium leading-none text-[#7b4328]">
+                Hiking
+              </h2>
+
+              <p class="mt-2 text-[9px] leading-[1.2] text-black">
+                Exploring nature on<br />
+                foot while.....
+              </p>
+            </div>
+
+            <img
+              src="/images/section2/hiking.jpg"
+              alt="Hiking"
+              class="absolute left-1/2 top-3 h-[80px] w-[80px] -translate-x-1/2 rounded-full object-cover"
+            />
+
+            <button
+              class="absolute bottom-[-7px] left-1/2 -translate-x-1/2 rounded-[3px] bg-[#814527] px-3 py-1 text-[8px] leading-none text-white"
+            >
+              Read More
+            </button>
+          </div>
+
+          <!-- Cycling -->
+          <div class="relative min-w-[150px] pt-[55px] lg:min-w-0">
+            <div
+              class="h-[125px] w-full rounded-[7px] bg-[#e9e1dc] px-3 pt-[48px] text-center"
+            >
+              <h2 class="text-[15px] font-medium leading-none text-[#7b4328]">
+                Cycling
+              </h2>
+
+              <p class="mt-2 text-[9px] leading-[1.2] text-black">
+                Riding on roads or<br />
+                trails for...
+              </p>
+            </div>
+
+            <img
+              src="/images/section2/cycling.jpg"
+              alt="Cycling"
+              class="absolute left-1/2 top-3 h-[80px] w-[80px] -translate-x-1/2 rounded-full object-cover"
+            />
+
+            <button
+              class="absolute bottom-[-7px] left-1/2 -translate-x-1/2 rounded-[3px] bg-[#814527] px-3 py-1 text-[8px] leading-none text-white"
+            >
+              Read More
+            </button>
+          </div>
+
+          <!-- Kayaking -->
+          <div class="relative min-w-[150px] pt-[55px] lg:min-w-0">
+            <div
+              class="h-[125px] w-full rounded-[7px] bg-[#e9e1dc] px-3 pt-[48px] text-center"
+            >
+              <h2 class="text-[15px] font-medium leading-none text-[#7b4328]">
+                Kayaking
+              </h2>
+
+              <p class="mt-2 text-[9px] leading-[1.2] text-black">
+                Paddling across rivers<br />
+                or seas for...
+              </p>
+            </div>
+
+            <img
+              src="/images/section2/rafting.jpg"
+              alt="Kayaking"
+              class="absolute left-1/2 top-3 h-[80px] w-[80px] -translate-x-1/2 rounded-full object-cover"
+            />
+
+            <button
+              class="absolute bottom-[-7px] left-1/2 -translate-x-1/2 rounded-[3px] bg-[#814527] px-3 py-1 text-[8px] leading-none text-white"
+            >
+              Read More
+            </button>
+          </div>
+
+          <!-- Rock Climbing -->
+          <div class="relative min-w-[150px] pt-[55px] lg:min-w-0">
+            <div
+              class="h-[125px] w-full rounded-[7px] bg-[#e9e1dc] px-3 pt-[48px] text-center"
+            >
+              <h2 class="text-[15px] font-medium leading-none text-[#7b4328]">
+                Rock Climbing
+              </h2>
+
+              <p class="mt-2 text-[9px] leading-[1.2] text-black">
+                Scaling natural or<br />
+                artificial walls.....
+              </p>
+            </div>
+
+            <img
+              src="/images/section2/climbing.jpg"
+              alt="Rock Climbing"
+              class="absolute left-1/2 top-3 h-[80px] w-[80px] -translate-x-1/2 rounded-full object-cover"
+            />
+
+            <button
+              class="absolute bottom-[-7px] left-1/2 -translate-x-1/2 rounded-[3px] bg-[#814527] px-3 py-1 text-[8px] leading-none text-white"
+            >
+              Read More
+            </button>
+          </div>
+
+          <!-- Trail Running -->
+          <div class="relative min-w-[150px] pt-[55px] lg:min-w-0">
+            <div
+              class="h-[125px] w-full rounded-[7px] bg-[#e9e1dc] px-3 pt-[48px] text-center"
+            >
+              <h2 class="text-[15px] font-medium leading-none text-[#7b4328]">
+                Trail Running
+              </h2>
+
+              <p class="mt-2 text-[9px] leading-[1.2] text-black">
+                Running on natural<br />
+                terrain for.....
+              </p>
+            </div>
+
+            <img
+              src="/images/section2/runningman.jpg"
+              alt="Trail Running"
+              class="absolute left-1/2 top-3 h-[80px] w-[80px] -translate-x-1/2 rounded-full object-cover"
+            />
+
+            <button
+              class="absolute bottom-[-7px] left-1/2 -translate-x-1/2 rounded-[3px] bg-[#814527] px-3 py-1 text-[8px] leading-none text-white"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="webinar" class="bg-white py-16 sm:py-20">
+      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h1
+          class="text-center font-['Bebas_Neue'] text-[40px] font-medium leading-[1.12] tracking-tight text-black sm:text-[48px]"
+        >
+          Meet Our Top Adventure Guides
+        </h1>
+
+        <h2 class="mt-8 ml-6 font-['Bebas_Neue'] text-[28px] font-medium tracking-tight text-[#693f27] sm:text-[36px]">
+          Hiking Adventures
+        </h2>
+
+        <div
+          class="mt-8 grid grid-cols-1  justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- CARD -->
+          <div
+            class="w-full max-w-[253px] overflow-hidden rounded-xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.12)]"
+          >
+            <img
+              src="/images/section3/firstbanda.png"
+              alt="Mannie Lorem"
+              class="h-[160px] w-full object-cover"
+            />
+
+            <div class="flex flex-col items-center px-4 pb-5 pt-3">
+              <h2 class="text-[24px] font-semibold leading-tight text-black">
+                Mannie Lorem
+              </h2>
+
+              <div
+                class="mt-2 flex items-center gap-1.5 text-[13px] text-gray-500"
+              >
+                <span class="text-[#8b4b2b]">🏅</span>
+                <span>10+ Years Experience</span>
+              </div>
+
+              <div class="mt-2 flex items-center gap-5 text-[13px]">
+                <a href="#" class="text-[#7b4125] hover:underline">
+                  View Profile
+                </a>
+
+                <span class="flex items-center gap-1 text-gray-500">
+                  <span class="text-yellow-400">★</span>
+                  4.9
+                </span>
+              </div>
+
+              <button
+                class="mt-3 w-[122px] rounded-lg bg-[#7b4125] py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#63351f]"
+              >
+                Book Guide
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="w-full max-w-[253px] overflow-hidden rounded-xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.12)]"
+          >
+            <img
+              src="/images/section3/secoundbanda.png"
+              alt="Lorem ipsum"
+              class="h-[160px] w-full object-cover"
+            />
+
+            <div class="flex flex-col items-center px-4 pb-5 pt-3">
+              <h2 class="text-[24px] font-semibold leading-tight text-black">
+                Lorem ipsum
+              </h2>
+
+              <div
+                class="mt-2 flex items-center gap-1.5 text-[13px] text-gray-500"
+              >
+                <span class="text-[#8b4b2b]">🏅</span>
+                <span>5+ Years Experience</span>
+              </div>
+
+              <div class="mt-2 flex items-center gap-5 text-[13px]">
+                <a href="#" class="text-[#7b4125] hover:underline">
+                  View Profile
+                </a>
+
+                <span class="flex items-center gap-1 text-gray-500">
+                  <span class="text-yellow-400">★</span>
+                  4.9
+                </span>
+              </div>
+
+              <button
+                class="mt-3 w-[122px] rounded-lg bg-[#7b4125] py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#63351f]"
+              >
+                Book Guide
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="w-full max-w-[253px] overflow-hidden rounded-xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.12)]"
+          >
+            <img
+              src="/images/section3/thirdbanda.png"
+              alt="John Lorem"
+              class="h-[160px] w-full object-cover"
+            />
+
+            <div class="flex flex-col items-center px-4 pb-5 pt-3">
+              <h2 class="text-[24px] font-semibold leading-tight text-black">
+                John Lorem
+              </h2>
+
+              <div
+                class="mt-2 flex items-center gap-1.5 text-[13px] text-gray-500"
+              >
+                <span class="text-[#8b4b2b]">🏅</span>
+                <span>10+ Years Experience</span>
+              </div>
+
+              <div class="mt-2 flex items-center gap-5 text-[13px]">
+                <a href="#" class="text-[#7b4125] hover:underline">
+                  View Profile
+                </a>
+
+                <span class="flex items-center gap-1 text-gray-500">
+                  <span class="text-yellow-400">★</span>
+                  4.9
+                </span>
+              </div>
+
+              <button
+                class="mt-3 w-[122px] rounded-lg bg-[#7b4125] py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#63351f]"
+              >
+                Book Guide
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="bg-white py-16 sm:py-20">
+      <div
+        class="mx-auto flex min-h-[600px] w-full max-w-7xl items-center justify-center rounded-2xl bg-[#7f4528] px-4 py-12 sm:px-6 lg:px-8"
+      >
+        <div
+          class="w-full max-w-[400px] rounded-[9px] bg-white px-7 py-10 shadow-sm sm:px-[34px]"
+        >
+          <div class="mb-5 flex justify-center">
+            <img
+              src="/images/form/Screenshot from 2026-08-17 14-21-21.png"
+              alt="Vertical Adventures"
+              class="h-[70px] w-auto object-contain"
+            />
+          </div>
+
+          <div class="text-center">
+            <h1 class="text-[23px] font-bold leading-tight text-black">
+              Log In
+            </h1>
+
+            <p class="mt-1 text-[18px] font-semibold text-[#444]">
+              Welcome Back!
+            </p>
+          </div>
+
+          <form class="mt-[15px]">
+            <div class="space-y-3">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="h-[44px] w-full rounded-[10px] border border-[#ddd] px-4 text-[13px] text-gray-700 outline-none placeholder:text-[#aaa] focus:border-[#7f4528] focus:ring-1 focus:ring-[#7f4528]"
+              />
+
+              <input
+                type="password"
+                placeholder="Enter your password"
+                class="h-[44px] w-full rounded-[10px] border border-[#ddd] px-4 text-[13px] text-gray-700 outline-none placeholder:text-[#aaa] focus:border-[#7f4528] focus:ring-1 focus:ring-[#7f4528]"
+              />
+            </div>
+
+            <div
+              class="mt-5 flex items-center justify-between text-[13px] text-[#666]"
+            >
+              <label class="flex cursor-pointer items-center gap-1.5">
+                <input
+                  type="checkbox"
+                  checked
+                  class="h-4 w-4 cursor-pointer accent-[#666]"
+                />
+                <span>Remember me</span>
+              </label>
+
+              <a href="#" class="hover:text-[#7f4528]"> Forgot Password? </a>
+            </div>
+
+            <button
+              type="submit"
+              class="mt-[17px] h-[42px] w-full rounded-[9px] bg-[#7f4528] text-[14px] font-medium text-white transition hover:bg-[#69391f]"
+            >
+              Login
+            </button>
+          </form>
+
+          <p class="mt-[17px] text-center text-[13px] text-[#555]">
+            Don’t have an account?
+            <a href="#" class="font-semibold hover:text-[#7f4528]"> Sign Up </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative mt-10 overflow-hidden rounded-t-2xl bg-[#f8f8f8]">
+      <img
+        src="images/footer/7c01dfb93e0aca9c6f00266bf2c34cfacf1bbc20.png"
+        alt=""
+        class="absolute right-0 top-5 h-[150px] w-[430px] object-contain opacity-20"
+      />
+
+      <div
+        class="relative z-10 mx-auto w-full max-w-7xl px-4 pt-8 sm:px-6 lg:px-8"
+      >
+        <div class="grid grid-cols-1 gap-8 pb-8 md:grid-cols-3">
+          <!-- Logo -->
+          <div>
+            <div class="mb-2 flex items-center">
+              <img
+                src="images/footer/Vector.png"
+                alt="Advenzo"
+                class="h-[55px] w-auto object-contain"
+              />
+            </div>
+
+            <p class="max-w-[230px] text-[12px] leading-5 text-gray-800">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3 class="mb-3 font-serif text-sm font-bold text-[#7f4528]">
+                Quick Links
+              </h3>
+
+              <ul class="space-y-1 text-[12px] text-gray-800">
+                <li><a href="#" class="hover:text-[#7f4528]">About</a></li>
+                <li><a href="#" class="hover:text-[#7f4528]">Contact</a></li>
+                <li>
+                  <a href="#" class="hover:text-[#7f4528]">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[#7f4528]">
+                    Terms and Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-[23px]">
+              <ul class="space-y-1 text-[12px] text-gray-800">
+                <li><a href="#" class="hover:text-[#7f4528]">Services</a></li>
+                <li><a href="#" class="hover:text-[#7f4528]">Adventures</a></li>
+                <li><a href="#" class="hover:text-[#7f4528]">Guides</a></li>
+                <li><a href="#" class="hover:text-[#7f4528]">Signup</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="mb-3 font-serif text-sm font-bold text-[#7f4528]">
+              Get in Touch
+            </h3>
+
+            <div class="space-y-2 text-[12px] text-gray-800">
+              <div class="flex items-start gap-2">
+                <img
+                  src="images/footer/location.png"
+                  class="mt-[2px] h-5 w-3"
+                  alt=""
+                />
+
+                <p>
+                  Suite 420, 600 Madison Avenue,<br />
+                  New York, NY 10022, United States
+                </p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <img src="images/footer/phone.png" class="h-5 w-3" alt="" />
+
+                <p>+1 (213) 555-8742</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <img src="images/footer/mail.png" class="h-5 w-3" alt="" />
+
+                <p>info@advenzo.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom band -->
+      <div
+        class="relative z-20 bg-[#7f4528] py-2 text-center text-[9px] text-white"
+      >
+        © 2025 CompanyName.com — All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

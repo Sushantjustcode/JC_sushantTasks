@@ -1,0 +1,20 @@
+/* Design tokens. Keep in sync with src/illustrations/palette.ts. */
+:root {
+  --paper: #f2e9d8;
+  --paper-hi: #fff8eb;
+  --paper-shade: #e4d7bb;
+  --ink: #26231f;
+  --burgundy: #854a50;
+  --teal: #648c86;
+  --mustard: #d5ac58;
+  --gray: #8b857b; /* decoration only: too low contrast for text on paper */
+  --violet: #8b70b8;
+
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'DM Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-hand: 'Caveat', 'Segoe Print', 'Bradley Hand', cursive;
+
+  --header-h: 56px;
+  --radius: 3px;
+  --line: 2.5px solid var(--ink);
+}

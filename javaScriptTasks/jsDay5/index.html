@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsday5</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">Objects</h1>
+    </header>
+
+    <section class="userWindow">
+      <div class="userContainer" id="userContainer"></div>
+    </section>
+
+    <section class="objectCtrls">
+      <div class="editBtn">
+        <h2>Edit User</h2>
+        <input type="text" placeholder="id of exsisting object" id="editId" />
+        <select name="editDropDown" id="editKey">
+          <option value="firstName">First   Name</option>
+          <option value="lastName">Last Name</option>
+          <option value="age">age</option>
+          <option value="eyeColor">eye Colour</option>
+        </select>
+        <input type="text" placeholder="New value" id="editValue" />
+        <button id="editBtn">edit</button>
+      </div>
+      <div class="delBtn">
+        <h2>Delete User</h2>
+        <input type="number" placeholder="id" id="delId" />
+        <button id="delBtn">Delete User</button>
+        <button id="reprintBtn">RefreshP</button>
+      </div>
+      <div class="newUser">
+        <h2>Add New User</h2>
+        <input type="text" placeholder="First Name" id="newUserFirstName" />
+        <input type="text" placeholder="Last Name" id="newUserLastName" />
+        <input type="number" placeholder=" enter the age" id="newUserAge" />
+        <input type="text" placeholder="enter the eye colour" id="newUserEye" />
+        <button id="addBtn">Add</button>
+      </div>
+    </section>
+
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>

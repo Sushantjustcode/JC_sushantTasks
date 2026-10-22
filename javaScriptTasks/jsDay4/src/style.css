@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 40px;
+  background: #f7f8fa;
+  color: #252a34;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  padding: 40px 20px 25px;
+  text-align: center;
+}
+
+.heroTitle h1 {
+  font-size: 2.5rem;
+  color: #303640;
+}
+
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 20px auto;
+}
+
+/* Sections */
+.lengthMethod,
+.atMethod,
+.joinMethod,
+.pushAndPopMethod,
+.shiftAndUnshiftMethod,
+.deleteMethod,
+.concatMethod,
+.sliceMethod,
+.spliceMethod {
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+/* Section colors */
+.lengthMethod { background: #d5e8fa; }
+.atMethod { background: #d8f0e3; }
+.joinMethod { background: #f8eacb; }
+.pushAndPopMethod { background: #e3dafa; }
+.shiftAndUnshiftMethod { background: #d8ebf0; }
+.deleteMethod { background: #f4dada; }
+.concatMethod { background: #e8def7; }
+.sliceMethod { background: #dcefdc; }
+.spliceMethod { background: #f5dfd2; }
+
+.sectionHeading {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.sampleArrContainer {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.sampleArrContainer h1 {
+  font: 500 1rem "Courier New", monospace;
+  white-space: nowrap;
+}
+
+.atMethodInput,
+.joinMethodInput,
+.pushAndPopMethodInput,
+.shiftAndUnshiftMethodInput,
+.deleteMethodInput,
+.concatMethodInput,
+.sliceMethodInput,
+.spliceMethodInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfe3e8;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7fa6c8;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #4f7fa8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #426e94;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.Btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Reset buttons */
+[id$="ClearBtn"] {
+  background: #87929d;
+}
+
+[id$="ClearBtn"]:hover {
+  background: #737e89;
+}
+
+.dataContainer {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.dataContainer p {
+  margin-bottom: 10px;
+  color: #69717d;
+}
+
+#Results h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#lengthResult,
+#atResult,
+#joinResult,
+#concatResult,
+#sliceResult,
+#spliceResult {
+  color: #315f82;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}

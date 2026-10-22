@@ -1,0 +1,23 @@
+{
+  "name": "loginsignupfullbackend",
+  "version": "1.0.0",
+  "description": "Node.js backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "joi": "^18.2.9",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.1",
+    "nodemailer": "^10.0.16",
+    "redis": "^6.3.0"
+  }
+}

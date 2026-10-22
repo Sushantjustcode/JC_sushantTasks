@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8fc;
+  color: #333;
+}
+
+/* Header */
+
+header {
+  background: #ffffff;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  color: #2196f3;
+  font-size: 2rem;
+}
+
+/* Users */
+
+.userWindow {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.userContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.objectCtrls h2{
+  text-align: center;
+}
+
+.user-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e1e8ef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+.user-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.30);
+
+}
+
+.user-card h2 {
+  color: #2196f3;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: #7ca6d0 3px solid;
+}
+
+.user-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.label {
+  font-weight: bold;
+  color: #777;
+}
+
+/* Controls */
+
+.objectCtrls {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.objectCtrls > div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e1e8ef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs */
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccd6df;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #2196f3;
+}
+
+/* Buttons */
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Edit */
+
+#editBtn {
+  background: #2196f3;
+}
+
+#editBtn:hover {
+  background: #1976d2;
+}
+
+#reprintBtn{
+  background: grey;
+}
+
+/* Delete */
+
+#delBtn {
+  background: #ef5350;
+}
+
+#delBtn:hover {
+  background: #d32f2f;
+}
+
+/* Add */
+
+#addBtn {
+  background: #4caf50;
+}
+
+#addBtn:hover {
+  background: #388e3c;
+}
+

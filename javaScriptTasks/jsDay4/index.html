@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsday4</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="heroTitle">
+        <h1 id="heroTitle">Array Methods Sheet</h1>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="lengthMethod">
+        <h1 class="sectionHeading">Length Method</h1>
+        <div class="sampleArrContainer"><h1 id="sampleArr"></h1></div>
+        <div class="dataContainer">
+          <span><p>Click here to check the length</p></span>
+          <div class="Btns">
+            <button id="lengthBtn">Submit</button>
+          <button id="lengthClearBtn">Reset</button>
+          </div>
+          <h2 id="Results">
+            <span><h2>Lenght Of Array is : <span id="lengthResult" ></span></h2></span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+     <section class="container">
+      <div class="atMethod">
+        <h1 class="sectionHeading">AT Method</h1>
+        <div class="sampleArrContainer"><h1 id="sampleArr2"></h1></div>
+        <div class="atMethodInput">
+          <input type="number" placeholder="enter the index of the array to search" id="atInput" >
+        </div>
+        <div class="dataContainer">
+          <span><p></p></span>
+          <div class="Btns">
+            <button id="atBtn">submit</button>
+          <button id="atClearBtn">Reset</button>
+          </div>
+          <h2 id="Results">
+            <span><h2>Element of index is : <span id="atResult" ></span></h2></span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+      <section class="container">
+      <div class="joinMethod">
+        <h1 class="sectionHeading">JOIN Method</h1>
+
+        <div class="sampleArrContainer">
+          <h1 id="sampleArr3"></h1>
+        </div>
+
+        <div class="joinMethodInput">
+          <label for="joinInput">enter the symbol to join array with : </label>
+          <input type="text" placeholder="here" id="joinInput">
+        </div>
+
+        <div class="dataContainer">
+          <div class="Btns">
+            <button id="joinBtn">submit</button>
+            <button id="joinClearBtn">Reset</button>
+          </div>
+          <div id="Results">
+            <h2>joined array : <span id="joinResult"></span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <section class="container">
+      <div class="pushAndPopMethod">
+        <h1 class="sectionHeading">Push And Pop Method</h1>
+
+        <div class="sampleArrContainer">
+          <h1 id="sampleArr4"></h1>
+        </div>
+
+        <div class="pushAndPopMethodInput">
+          <label for="pushInput">element you wanna push: </label>
+          <input type="text" placeholder="here" id="pushInput">
+        </div>
+
+        <div class="dataContainer">
+          <div class="Btns">
+            <button id="pushBtn">push</button>
+            <button id="popBtn">pop</button>
+            <button id="popClearBtn">Reset</button>
+
+          </div>
+          <!-- <div id="Results">
+            <h2>joined array : <span id="joinResult"></span></h2>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="shiftAndUnshiftMethod">
+        <h1 class="sectionHeading">Shift And Unshift Method</h1>
+
+        <div class="sampleArrContainer">
+          <h1 id="sampleArr5"></h1>
+        </div>
+
+        <div class="shiftAndUnshiftMethodInput">
+          <label for="unshiftInput">element you wanna unshift: </label>
+          <input type="text" placeholder="here" id="unshiftInput">
+        </div>
+
+        <div class="dataContainer">
+          <div class="Btns">
+            <button id="unshiftBtn">Unshift</button>
+            <button id="shiftBtn">shift</button>
+            <button id="shiftAndUnshiftClearBtn">Reset</button>
+          </div>
+          <!-- <div id="Results">
+            <h2>joined array : <span id="joinResult"></span></h2>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+      <section class="container">
+      <div class="deleteMethod">
+        <h1 class="sectionHeading">Delete Method</h1>
+        <div class="sampleArrContainer"><h1 id="sampleArr6"></h1></div>
+        <div class="deleteMethodInput">
+          <input type="number" placeholder="enter the index to delete element" id="deleteInput" >
+        </div>
+        <div class="dataContainer">
+          <span><p></p></span>
+          <div class="Btns">
+            <button id="deleteBtn">Delete</button>
+          <button id="deleteClearBtn">Reset</button>
+          </div>
+          <!-- <h2 id="Results">
+            <span><h2>new array is :  <span id="deleteResult" ></span></h2></span>
+          </h2> -->
+        </div>
+      </div>
+    </section>
+
+     <section class="container">
+      <div class="concatMethod">
+        <h1 class="sectionHeading">CONCAT Method</h1>
+
+        <!-- <div class="sampleArrContainer">
+          <h1 id="sampleArr7"></h1>
+        </div> -->
+
+        <div class="concatMethodInput">
+          <label for="concatInput1">enter the first array : </label>
+          <input type="text" placeholder="array 1 here" id="concatInput1">
+
+           <label for="concatInput2">enter the second array : </label>
+          <input type="text" placeholder="array 2 here" id="concatInput2">
+        </div>
+
+        <div class="dataContainer">
+          <div class="Btns">
+            <button id="concatBtn">Concat</button>
+            <button id="concatClearBtn">Reset</button>
+          </div>
+          <div id="Results">
+            <h2>joined array : <span id="concatResult"></span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------SLICE METHOD -------------- -->
+
+<section class="container">
+  <div class="sliceMethod">
+    <h1 class="sectionHeading">SLICE Method</h1>
+
+    <div class="sampleArrContainer">
+      <h1 id="sampleArr7"></h1>
+    </div>
+
+    <div class="sliceMethodInput">
+      <label for="sliceStartInput">Start index:</label>
+      <input
+        type="number"
+        id="sliceStartInput"
+        placeholder="enter start index"
+      />
+
+      <label for="sliceEndInput">End index:</label>
+      <input
+        type="number"
+        id="sliceEndInput"
+        placeholder="enter end index"
+      />
+    </div>
+
+    <div class="dataContainer">
+      <div class="Btns">
+        <button id="sliceBtn">Slice</button>
+        <button id="sliceClearBtn">Reset</button>
+      </div>
+
+      <div id="Results">
+        <h2>
+          Sliced array :
+          <span id="sliceResult"></span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- -----------------SPLICE METHOD -------- -->
+
+<section class="container">
+  <div class="spliceMethod">
+    <h1 class="sectionHeading">SPLICE Method</h1>
+
+    <div class="sampleArrContainer">
+      <h1 id="sampleArr8"></h1>
+    </div>
+
+    <div class="spliceMethodInput">
+      <label for="spliceStartInput">Start index:</label>
+      <input
+        type="number"
+        id="spliceStartInput"
+        placeholder="enter start index"
+      />
+
+      <label for="spliceDeleteInput">Delete count:</label>
+      <input
+        type="number"
+        id="spliceDeleteInput"
+        placeholder="enter number of elements"
+      />
+
+      <label for="spliceAddInput">Element to add:</label>
+      <input
+        type="text"
+        id="spliceAddInput"
+        placeholder="optional"
+      />
+    </div>
+
+    <div class="dataContainer">
+      <div class="Btns">
+        <button id="spliceBtn">Splice</button>
+        <button id="spliceClearBtn">Reset</button>
+      </div>
+
+      <div id="Results">
+        <h2>
+          Removed elements :
+          <span id="spliceResult"></span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

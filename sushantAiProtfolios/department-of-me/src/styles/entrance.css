@@ -1,0 +1,183 @@
+.entrance {
+  position: relative;
+  background: var(--paper);
+}
+
+.entrance__stage {
+  position: relative;
+  height: 100vh; /* fallback */
+  height: 100svh;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.entrance__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.svg-sign {
+  font: 800 25px var(--font-display);
+  fill: var(--ink);
+  letter-spacing: 0.04em;
+}
+
+/* Hero copy sits over the sky. It stays real HTML so it is readable and selectable. */
+.hero {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: calc(var(--header-h) + 1.5rem) clamp(1rem, 5vw, 5rem) 3rem;
+  max-width: min(44rem, 52%);
+  pointer-events: none;
+}
+.hero > * {
+  margin: 0;
+}
+.hero a {
+  pointer-events: auto;
+}
+
+.hero__stamp {
+  align-self: flex-start;
+  padding: 0.35rem 0.7rem;
+  border: 2.5px solid var(--burgundy);
+  color: var(--burgundy);
+  font: 800 0.78rem/1 var(--font-body);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transform: rotate(-2.5deg);
+  border-radius: 3px;
+}
+
+.hero__name {
+  font-size: clamp(2.6rem, 7.2vw, 6.4rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.hero__word {
+  display: inline-block;
+  white-space: nowrap;
+}
+.hero__char {
+  display: inline-block;
+  will-change: transform;
+}
+
+.hero__title {
+  font: 700 clamp(1rem, 1.7vw, 1.3rem) / 1.3 var(--font-body);
+  color: var(--teal-ink, #3f6761);
+}
+.hero__lede {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  max-width: 34rem;
+}
+.hero__tagline {
+  font: 600 clamp(1.15rem, 2vw, 1.55rem) / 1.2 var(--font-hand);
+  color: var(--burgundy);
+  transform: rotate(-1deg);
+}
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+.entrance__cue {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  transform: translateX(-50%);
+  font: 600 1.35rem/1 var(--font-hand);
+  pointer-events: none;
+}
+.entrance__cue svg {
+  animation: nudge 1.6s ease-in-out infinite;
+}
+@keyframes nudge {
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.skip-intro {
+  position: absolute;
+  z-index: 3;
+  right: clamp(0.75rem, 3vw, 2rem);
+  bottom: 1.2rem;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-hi);
+  font: 700 0.9rem/1 var(--font-body);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.skip-intro:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+/* Portrait: copy moves to the top, the world takes the lower half. */
+.entrance--tall .hero {
+  max-width: none;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  padding: calc(var(--header-h) + 2.6rem) 1.1rem 0;
+}
+.entrance--tall .hero__name {
+  font-size: clamp(2.1rem, 11vw, 3.6rem);
+}
+.entrance--tall .hero__lede {
+  font-size: 0.95rem;
+}
+.entrance--tall .hero__tagline {
+  display: none;
+}
+.entrance--tall .hero__stamp {
+  font-size: 0.68rem;
+}
+.entrance--tall .btn {
+  min-height: 48px;
+  padding-inline: 1rem;
+}
+
+/* Reduced motion / static: no pinning, a single composed frame. */
+.entrance--static .entrance__stage {
+  min-height: 640px;
+}
+.entrance--static .hero {
+  pointer-events: none;
+}
+
+@media (max-width: 900px) and (min-aspect-ratio: 1/1) {
+  .hero {
+    max-width: 58%;
+  }
+  .hero__lede,
+  .hero__tagline {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entrance__cue svg {
+    animation: none;
+  }
+}

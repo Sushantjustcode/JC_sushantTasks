@@ -1,0 +1,12 @@
+{
+  "name": "create-node-day",
+  "version": "1.0.0",
+  "description": "CLI to generate my React + Node project structure",
+  "bin": {
+    "create-node-cli": "./bin/cli.js"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

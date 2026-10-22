@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsday6</title>
+    <link rel="stylesheet" href="src/timer.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="secContainer">
+        <div class="timeSection">
+          <div class="time">
+            <h1 id="timer">
+              <span id="hour">0</span>
+              <span class="hyphen">-</span>
+              <span id="minute">0</span>
+              <span class="hyphen">-</span>
+              <span id="secound">0</span>
+              <span class="hyphen">-</span>
+              <span id="millisecound">0</span>
+            </h1>
+          </div>
+        </div>
+        <div class="BtnSection">
+          <div class="Btns">
+            <button id="resetBtn">Reset</button>
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+          </div>
+        </div>
+
+        <div class="extrabutton">
+          <button id="secIncBtn">+ 10 sec</button>
+        </div>
+
+      </div>
+    </div>
+    <script type="module" src="/src/timer.js"></script>
+  </body>
+</html>

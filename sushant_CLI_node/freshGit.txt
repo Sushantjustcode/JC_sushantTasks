@@ -1,0 +1,8 @@
+rm -rf .git    ----------> for linux
+
+rmdir /s /q .git  ----------> windows
+
+Remove-Item -Recurse -Force .git ---------> window power shells
+
+
+

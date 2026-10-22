@@ -1,0 +1,120 @@
+@keyframes ghum{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item9 {
+  color: white;
+  background-color: #1d213d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+
+.item7,.item8{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+   color: white;
+  background:linear-gradient(to bottom,#222a4f,#161930);
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.item1:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.item2:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.item3:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.item4:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.item5:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.item6:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.it6-content:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+
+.item7:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+
+
+.item8:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+
+.item9:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+.it9-buttons a {
+  transition: transform 0.2s ease;
+}
+
+#trial:hover {
+  transform: rotate(-19deg) scale(1.05);
+   box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+#rewrite:hover {
+  transform: rotate(-48deg) scale(1.05);
+   box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+#camera:hover {
+  transform: scale(1.1);
+   box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+#exchange:hover {
+  transform: scale(1.1);
+   box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}
+
+#gift:hover {
+  transform: scale(1.1);
+   box-shadow: 2px 24px 19px -5px rgba(0, 0, 0, 0.47);
+}

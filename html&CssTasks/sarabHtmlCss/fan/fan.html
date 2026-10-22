@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FANNY - FAN</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #onBtn{
+      margin: 10px;
+      padding: 18px;
+      background-color: green;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
+
+    }
+    #offBtn{
+      margin: 10px;
+      padding: 18px;
+      background-color: red;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
+
+    }
+    .buttons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem ;
+    }
+    #onBtn:hover{
+      transform: scale(1.2);
+      box-shadow: 4px 4px 10px 0px rgba(115, 255, 1, 0.8);
+    }
+     #offBtn:hover{
+      transform: scale(1.2);
+      box-shadow: 4px 4px 10px 0px rgb(255, 0, 0);
+    }
+    .container{
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100vw;
+      padding: 20px;
+      text-align: center;
+      background-color: antiquewhite;
+    }
+  .fan {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+
+#fanbody,
+#fanblade {
+  position: absolute;
+  width: 250px;
+
+}
+
+#fanbody {
+  z-index: 2;
+}
+
+#fanblade {
+  z-index: 1;
+  transform-origin: center center;
+  top:24px;
+}
+.sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  opacity: 0.4;
+  word-spacing: 5px;
+  margin: 10px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+@keyframes fanON {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(2000deg);
+  }
+}
+
+@keyframes fanOFF {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Its a Fanny Fan</h1>
+  </div>
+
+  <div class="fan">
+    <img src="fanonly.png" alt="fanbody" id="fanbody">
+    <img src="centeredBlade.png" alt="blade" id="fanblade">
+  </div>
+
+  <div class="buttons">
+    <button id="onBtn" > ON </button>
+    <button id="offBtn" > OFF </button>
+
+  </div>
+
+  <div class="sign">
+    <p>MADE WITH ♡ BY SUSHANT</p>
+  </div>
+
+
+  <script>
+    const onBtn = document.getElementById("onBtn");
+    const offBtn = document.getElementById("offBtn");
+    const blade = document.getElementById("fanblade");
+
+    onBtn.addEventListener("click",()=>{
+      console.log("Fan On");
+      blade.style.animation = "fanON 2s linear infinite";
+    })
+
+    offBtn.addEventListener("click", () => {
+          blade.style.animation = "fanOFF 2s linear reverse";
+
+  });
+
+  </script>
+</body>
+</html>

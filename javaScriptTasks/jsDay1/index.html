@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsDay1</title>
+      <link rel="stylesheet" href="images/style.css">
+    <script>
+      function myFunction() {
+        document.getElementById("demo3").innerHTML = "The Function is in Head";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!---------------------My First JavaScript------------------- -->
+    <div class="container">
+      <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()"
+      >
+        Click me to display Date and Time.
+      </button>
+      <p id="demo"></p>
+      <div class="line"></div>
+    </div>
+
+    <!-- ----------Secound Task-----------------  -->
+    <div class="container">
+      <h2>What Can JavaScript Do?</h2>
+      <p id="demo1">JavaScript can change HTML content.</p>
+      <button
+        type="button"
+        onclick="
+          document.getElementById('demo1').innerHTML = 'Hello JavaScript!'">
+        Click Me!
+      </button>
+      <div class="line"></div>
+    </div>
+
+    <!-- ------------------Thirds Task--------------------  -->
+    <div class="container">
+      <h2>What Can JavaScript Do?</h2>
+
+      <p>JavaScript can change HTML attribute values.</p>
+
+      <p>
+        In this case JavaScript changes the value of the src (source) attribute
+        of an image.
+      </p>
+
+      <button
+        onclick="
+          document.getElementById('myImage').src = 'images/pic_bulbon.gif'
+        "
+      >
+        Turn on the light
+      </button>
+      <img id="myImage" src="pic_bulboff.gif" style="width: 100px" />
+      <button
+        onclick="
+          document.getElementById('myImage').src = 'images/pic_bulboff.gif'
+        "
+      >
+        Turn off the light
+      </button>
+      <div class="line"></div>
+    </div>
+
+    <!-- ----------------------Fourth Task---------------- -->
+
+    <div class="container">
+      <h2>Demo JavaScript in Head</h2>
+
+      <p id="demo3">A Paragraph</p>
+      <button type="button" onclick="myFunction()">Try it</button>
+
+      <h2>Demo JavaScript in Body</h2>
+
+      <p id="demo4">A Paragraph is in Body</p>
+
+      <button type="button" onclick="myFunction2()">Try it</button>
+
+      <script>
+        function myFunction2() {
+          document.getElementById("demo4").innerHTML =
+            "Function is in the body .";
+        }
+      </script>
+      <div class="line"></div>
+    </div>
+
+
+    <!-- --------------------- Fifth Task-------------------------  -->
+
+
+    <div class="container">
+      
+      <h2>Demo External JavaScript</h2>
+
+      <p id="demo5">A Paragraph.</p>
+
+      <button type="button" onclick="myFunction3()">Try it</button>
+
+      <p>This example links to "myScript.js".</p>
+      <p>(myFunction is stored in "myScript.js")</p>
+
+      <script src="src/myScript.js"></script>
+      <div class="line"></div>
+    </div>
+
+    <!-- ----------------------Sixth Task ---------------------------  -->
+    <div class="container">
+      <h1>Adding h2 using innerHTML</h1>
+      <p>My First Paragraph</p>
+
+      <p id="demo6"></p>
+
+      <script>
+        document.getElementById("demo6").innerHTML = "<h2>Hello World</h2>";
+      </script>
+      <div class="line"></div>
+    </div>
+
+    <!-- -------------------------------Seventh Task -----------------------  -->
+
+    <div class="container">
+      <h1>Trying document.write normally</h1>
+      <p>My first paragraph.</p>
+
+      <script>
+        document.write(5 + 6);
+      </script>
+      <div class="line"></div>
+    </div>
+
+    <!-- --------------------------------Eight Task--------------------------  -->
+
+    <div class="container">
+      <h1>Trying document.write on a button</h1>
+      <p>My first paragraph.</p>
+
+      <button type="button" onclick="document.write(5 + 6)">Try it</button>
+      <div class="line"></div>
+    </div>
+
+    <!-- ----------------------------------Ninth Task------------------------------  -->
+
+    <div class="container">
+      <h1>Using Window alert</h1>
+      <p>My first paragraph.</p>
+
+      <script>
+        window.alert(`Trying window.alert -- ${5 + 6}`);
+        // we can skip window keyword
+      </script>
+      <div class="line"></div>
+    </div>
+
+    <!-- -------------------------------------Tenth Task--------------------  -->
+
+    <div class="container">
+      <h1>Using window.Print()</h1>
+      <button onclick="window.print()">Print this page</button>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>

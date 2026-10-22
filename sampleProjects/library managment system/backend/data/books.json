@@ -1,0 +1,418 @@
+[
+  {
+    "id": "book-frankenstein",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "category": "Classic Fiction",
+    "year": 1818,
+    "rating": 4.9,
+    "pages": 280,
+    "height": 260,
+    "thickness": 44,
+    "spineColor": "#2A362B",
+    "textColor": "#F3EAD8",
+    "coverTexture": "leather",
+    "coverEmblem": "dragon",
+    "fontStyle": "cormorant",
+    "description": "Mary Shelley's foundational gothic masterpiece of ambition, science, and the tragic consequences of creating life beyond human limits.",
+    "tableOfContents": [
+      "Letter I: To Mrs. Saville, England",
+      "Chapter I: Geneva and Youth",
+      "Chapter IV: The Secret of Life",
+      "Chapter V: The Creature Awakens",
+      "Chapter X: Encounter on the Mer de Glace"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "Letter I",
+        "content": "You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings. I arrived here yesterday, and my first task is to assure my dear sister of my welfare and increasing confidence in the success of my undertaking.\n\nI am already far north of London, and as I walk in the streets of Petersburgh, I feel a cold northern breeze play upon my cheeks, which braces my nerves and fills me with delight."
+      },
+      {
+        "pageNumber": 2,
+        "title": "Chapter IV: The Discovery",
+        "content": "No one can conceive the variety of feelings which bore me onwards, like a whirlwind, eager to penetrate into the secret mechanisms of nature. In the midst of this darkness a sudden light broke in upon me—a light so brilliant and wondrous, yet so simple.\n\nI found that I possessed the key to bestow animation upon lifeless matter. The astonishment which I had at first experienced on this discovery soon gave place to delight and rapture."
+      },
+      {
+        "pageNumber": 3,
+        "title": "Chapter V: The Spark of Being",
+        "content": "It was on a dreary night of November that I beheld the accomplishment of my toils. With an anxiety that almost amounted to agony, I collected the instruments of life around me, that I might infuse a spark of being into the lifeless thing that lay at my feet.\n\nIt was already one in the morning; the rain pattered dismally against the panes, and my candle was nearly burnt out, when, by the glimmer of the half-extinguished light, I saw the dull yellow eye of the creature open; it breathed hard, and a convulsive motion agitated its limbs."
+      },
+      {
+        "pageNumber": 4,
+        "title": "The Awakening",
+        "content": "How can I describe my emotions at this catastrophe, or how delineate the wretch whom with such infinite pains and care I had endeavoured to form? His limbs were in proportion, and I had selected his features as beautiful. Beautiful! Great God!\n\nHis yellow skin scarcely covered the work of muscles and arteries beneath; his hair was of a lustrous black, and flowing; his teeth of a pearly whiteness; but these luxuriances only formed a more horrid contrast with his watery eyes, that seemed almost of the same colour as the dun-white sockets in which they were set."
+      }
+    ],
+    "tags": [
+      "Gothic",
+      "Science Fiction",
+      "Classics",
+      "Horror"
+    ]
+  },
+  {
+    "id": "book-alice",
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "category": "Fantasy & Magic",
+    "year": 1865,
+    "rating": 4.9,
+    "pages": 192,
+    "height": 240,
+    "thickness": 36,
+    "spineColor": "#1D4ED8",
+    "textColor": "#FEF3C7",
+    "coverTexture": "cloth",
+    "coverEmblem": "champagne",
+    "fontStyle": "playfair",
+    "description": "Lewis Carroll's whimsical classic following young Alice down a rabbit hole into a surreal underground realm of wonder, logic, and madness.",
+    "tableOfContents": [
+      "Chapter I: Down the Rabbit-Hole",
+      "Chapter II: The Pool of Tears",
+      "Chapter V: Advice from a Caterpillar",
+      "Chapter VI: Pig and Pepper",
+      "Chapter VII: A Mad Tea-Party"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "Chapter I: Down the Rabbit-Hole",
+        "content": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversations?'\n\nSo she was considering in her own mind whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her."
+      },
+      {
+        "pageNumber": 2,
+        "title": "Down the Well",
+        "content": "There was nothing so very remarkable in that; nor did Alice think it so very much out of the way to hear the Rabbit say to itself, 'Oh dear! Oh dear! I shall be late!' but when the Rabbit actually took a watch out of its waistcoat-pocket, and looked at it, and then hurried on, Alice started to her feet.\n\nBurning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge. In another moment down went Alice after it, never once considering how in the world she was to get out again."
+      },
+      {
+        "pageNumber": 3,
+        "title": "The Fall",
+        "content": "The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.\n\nEither the well was very deep, or she fell very slowly, for she had plenty of time as she went down to look about her and to wonder what was going to happen next. First, she tried to look down and make out what she was coming to, but it was too dark to see anything."
+      },
+      {
+        "pageNumber": 4,
+        "title": "Drink Me",
+        "content": "There was nothing on the table but a tiny golden key, and Alice's first thought was that it might belong to one of the doors of the hall; but, alas! either the locks were too large, or the key was too small, but at any rate it would not open any of them.\n\nHowever, on the second time round, she came upon a low curtain she had not noticed before, and behind it was a little door about fifteen inches high. Round its neck was a paper label, with the words 'DRINK ME' beautifully printed on it in large letters."
+      }
+    ],
+    "tags": [
+      "Wonderland",
+      "Fantasy",
+      "Classic",
+      "Adventure"
+    ]
+  },
+  {
+    "id": "book-dorian-gray",
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "category": "Classic Fiction",
+    "year": 1890,
+    "rating": 4.8,
+    "pages": 256,
+    "height": 252,
+    "thickness": 40,
+    "spineColor": "#9F1239",
+    "textColor": "#FFE4E6",
+    "coverTexture": "velvet",
+    "coverEmblem": "palette",
+    "fontStyle": "playfair",
+    "description": "Oscar Wilde's dazzling, decadent tale of youth, vanity, moral decay, and a portrait that bears the hidden sins of its ageless subject.",
+    "tableOfContents": [
+      "The Preface: Art and Morality",
+      "Chapter I: The Studio of Basil Hallward",
+      "Chapter II: Lord Henry's Philosophy",
+      "Chapter VII: Sibyl Vane's Performance",
+      "Chapter XX: The Final Canvas"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "The Preface",
+        "content": "The artist is the creator of beautiful things. To reveal art and conceal the artist is art's aim. The critic is he who can translate into another manner or a new material his impression of beautiful things.\n\nThere is no such thing as a moral or an immoral book. Books are well written, or badly written. That is all. The nineteenth century dislike of Realism is the rage of Caliban seeing his own face in a glass. The moral life of man forms part of the subject-matter of the artist, but the morality of art consists in the perfect use of an imperfect medium."
+      },
+      {
+        "pageNumber": 2,
+        "title": "Chapter I: The Studio",
+        "content": "The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.\n\nIn the centre of the room, clamped to an upright easel, stood the full-length portrait of a young man of extraordinary personal beauty, and in front of it, some little distance off, was sitting the artist himself, Basil Hallward, whose sudden disappearance some years ago caused, at the time, such public excitement."
+      },
+      {
+        "pageNumber": 3,
+        "title": "The Influence of Youth",
+        "content": "'Because you have the most marvellous youth, and youth is the one thing worth having.'\n\n'I don't feel that, Lord Henry.'\n\n'No, you don't feel it now. Some day, when you are old and wrinkled and ugly, when thought has seared your forehead with its lines, and hideous passions have branded your lips with their hideous fires, you will feel it. You will feel it terribly. Now, wherever you go, you charm the world. Will it always be so?'"
+      },
+      {
+        "pageNumber": 4,
+        "title": "The Fatal Wish",
+        "content": "Dorian Gray looked at the open portrait. A look of joy came into his eyes, as if he had recognized himself for the first time.\n\n'How sad it is!' murmured Dorian Gray, with his eyes still fixed upon his own picture. 'How sad it is! I shall grow old, and horrible, and dreadful. But this picture will remain always young. If it were only the other way! If it were I who was to be always young, and the picture that was to grow old! For that—for that—I would give everything! Yes, there is nothing in the whole world I would not give! I would give my soul for that!'"
+      }
+    ],
+    "tags": [
+      "Aestheticism",
+      "Gothic",
+      "Psychological",
+      "Classics"
+    ]
+  },
+  {
+    "id": "book-sherlock",
+    "title": "Adventures of Sherlock Holmes",
+    "author": "Sir Arthur Conan Doyle",
+    "category": "Mystery & Crime",
+    "year": 1892,
+    "rating": 4.9,
+    "pages": 308,
+    "height": 258,
+    "thickness": 44,
+    "spineColor": "#854D0E",
+    "textColor": "#FEF9C3",
+    "coverTexture": "leather",
+    "coverEmblem": "magnifier",
+    "fontStyle": "cormorant",
+    "description": "The quintessential detective encounters of Sherlock Holmes and Dr. John Watson, beginning with the matchless Irene Adler in A Scandal in Bohemia.",
+    "tableOfContents": [
+      "I: A Scandal in Bohemia",
+      "II: The Red-Headed League",
+      "III: A Case of Identity",
+      "IV: The Boscombe Valley Mystery",
+      "V: The Five Orange Pips"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "I: A Scandal in Bohemia",
+        "content": "To Sherlock Holmes she is always THE woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex.\n\nIt was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen."
+      },
+      {
+        "pageNumber": 2,
+        "title": "Baker Street Chamber",
+        "content": "I had called upon my friend Sherlock Holmes upon the second night after Christmas, with the intention of wishing him the compliments of the season. He was lounging upon the sofa in a purple dressing-gown, a pipe-rack within his reach upon the right, and a pile of crumpled morning papers, evidently newly studied, near at hand.\n\nBeside the couch was a wooden chair, and on the angle of its back hung a very seedy and disreputable hard-felt hat, much the worse for wear, and cracked in several places."
+      },
+      {
+        "pageNumber": 3,
+        "title": "The Science of Deduction",
+        "content": "'You see, my dear Watson, but you do not observe. The distinction is clear. For example, you have frequently seen the steps which lead up from the hall to this room.'\n\n'Frequently.'\n\n'How often?'\n\n'Well, some hundreds of times.'\n\n'Then how many are there?'\n\n'How many? I don't know.'\n\n'Quite so! You have not observed. And yet you have seen. That is just my point. Now, I know that there are seventeen steps, because I have both seen and observed.'"
+      },
+      {
+        "pageNumber": 4,
+        "title": "The Disguise",
+        "content": "It was close upon four before the door opened, and a drunken-looking groom, ill-kempt and side-whiskered, with an inflamed face and disreputable clothes, walked into the room.\n\nAccustomed as I was to my friend's amazing powers in the use of disguises, I had to look three times before I was certain that it was indeed he. With a nod he vanished into the bedroom, whence he emerged in five minutes tweed-suited and respectable, as of old."
+      }
+    ],
+    "tags": [
+      "Detective",
+      "Mystery",
+      "Baker Street",
+      "Victorian"
+    ]
+  },
+  {
+    "id": "book-meditations",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "category": "Philosophy",
+    "year": 180,
+    "rating": 4.9,
+    "pages": 196,
+    "height": 236,
+    "thickness": 34,
+    "spineColor": "#9A3412",
+    "textColor": "#FEF3C7",
+    "coverTexture": "leather",
+    "coverEmblem": "pillar",
+    "fontStyle": "cinzel",
+    "description": "The private journal of the Roman Emperor Marcus Aurelius, offering timeless Stoic wisdom on inner peace, virtue, mortality, and resilience.",
+    "tableOfContents": [
+      "Book I: Debts and Lessons",
+      "Book II: On the River Gran",
+      "Book IV: The Inner Citadel",
+      "Book VII: Endurance of Soul",
+      "Book XII: The Present Moment"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "Book II : 1",
+        "content": "When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly. They are like this because they cannot distinguish good from evil.\n\nBut I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own—not of the same blood or birth, but the same mind, and possessing a share of the divine."
+      },
+      {
+        "pageNumber": 2,
+        "title": "Book IV : The Inner Citadel",
+        "content": "People look for retreats for themselves, in the country, by the coast, or in the hills. There is nowhere that a person can find a more peaceful and trouble-free retreat than in his own mind.\n\nSo constantly give yourself this retreat, and renew yourself. Let your basic principles be brief and fundamental, the kind that will at once wash away all anguish and send you back without any irritation at the world to which you must return."
+      },
+      {
+        "pageNumber": 3,
+        "title": "Book VII : The River of Time",
+        "content": "Time is a river, a violent current of events, glimpsed once and already carried past us, and another follows and is gone.\n\nNever let the future disturb you. You will meet it, if you have to, with the same weapons of reason which today arm you against the present. Look through the outward veneer of people and circumstances, and keep your core unharmed."
+      },
+      {
+        "pageNumber": 4,
+        "title": "Book XII : The Final Stage",
+        "content": "You have embarked, you have made the voyage, you have come to shore; now step out. If for another life, there is no place empty of gods, even there; if to oblivion, you will be done with endurance of pleasures and pains, and serving a vessel that is vastly inferior to the master within it.\n\nDepart then with goodwill; for the power that frees you is gracious."
+      }
+    ],
+    "tags": [
+      "Stoicism",
+      "Roman History",
+      "Philosophy",
+      "Wisdom"
+    ]
+  },
+  {
+    "id": "book-pride-prejudice",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "category": "Classic Fiction",
+    "year": 1813,
+    "rating": 4.9,
+    "pages": 340,
+    "height": 262,
+    "thickness": 48,
+    "spineColor": "#354F52",
+    "textColor": "#CAD2C5",
+    "coverTexture": "linen",
+    "coverEmblem": "book",
+    "fontStyle": "playfair",
+    "description": "Jane Austen's sparkling, witty masterpiece exploring societal expectations, pride, first impressions, and the spirited romance between Elizabeth Bennet and Mr. Darcy.",
+    "tableOfContents": [
+      "Chapter I: A Truth Universally Acknowledged",
+      "Chapter III: The Ball at Meryton",
+      "Chapter XXXIV: Mr. Darcy's Proposal",
+      "Chapter XLIII: Pemberley Explored",
+      "Chapter LVIII: In the Grounds of Longbourn"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "Chapter I",
+        "content": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.\n\nHowever little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters."
+      },
+      {
+        "pageNumber": 2,
+        "title": "Netherfield Park",
+        "content": "'My dear Mr. Bennet,' said his lady to him one day, 'have you heard that Netherfield Park is let at last?'\n\nMr. Bennet replied that he had not.\n\n'But it is,' returned she; 'for Mrs. Long has just been here, and she told me all about it.'\n\nMr. Bennet made no answer.\n\n'Do you not want to know who has taken it?' cried his wife impatiently.\n\n'You want to tell me, and I have no objection to hearing it.'"
+      },
+      {
+        "pageNumber": 3,
+        "title": "Chapter III: The Assembly",
+        "content": "Mr. Darcy was the principal attraction of the room. He was discovered to be proud, to be above his company, and above being pleased; and not all his large estate in Derbyshire could then save him from having a most forbidding, disagreeable countenance.\n\nElizabeth Bennet had been obliged, by the scarcity of gentlemen, to sit down for two dances; and during part of that time, Mr. Darcy had been standing near enough for her to hear a conversation between him and Mr. Bingley."
+      },
+      {
+        "pageNumber": 4,
+        "title": "First Impressions",
+        "content": "'She is tolerable; but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men.'\n\nElizabeth remained with no very cordial feelings toward him. She told the story, however, with great spirit among her friends; for she had a lively, playful disposition, which delighted in anything ridiculous."
+      }
+    ],
+    "tags": [
+      "Romance",
+      "Regency",
+      "Classics",
+      "Wit"
+    ]
+  },
+  {
+    "id": "book-time-machine",
+    "title": "The Time Machine",
+    "author": "H.G. Wells",
+    "category": "Sci-Fi & Tech",
+    "year": 1895,
+    "rating": 4.8,
+    "pages": 160,
+    "height": 238,
+    "thickness": 32,
+    "spineColor": "#0F172A",
+    "textColor": "#38BDF8",
+    "coverTexture": "cyber",
+    "coverEmblem": "circuit",
+    "fontStyle": "mono",
+    "description": "The pioneering science fiction novella introducing the fourth dimension of space-time and hurling a Victorian inventor 800,000 years into humanity's twilight.",
+    "tableOfContents": [
+      "I: The Fourth Dimension",
+      "II: The Mechanism Demonstrated",
+      "III: The Flight through Time",
+      "IV: The Golden Age of the Eloi",
+      "V: The Dark Morlocks Below"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "I: The Fourth Dimension",
+        "content": "The Time Traveller was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated. The fire burned brightly, and the soft radiance of the incandescent lights in the lilies of silver caught the bubbles that flashed and passed in our glasses.\n\n'You must follow me carefully. I shall have to controvert one or two ideas that are almost universally accepted. The geometry, for instance, they taught you at school is founded on a misconception.'"
+      },
+      {
+        "pageNumber": 2,
+        "title": "Space and Time",
+        "content": "'Clearly,' the Time Traveller proceeded, 'any real body must have extension in four directions: it must have Length, Breadth, Thickness, and—Duration. But through a natural infirmity of the flesh, which I will explain to you in a moment, we incline to overlook this fact.\n\nThere are really four dimensions, three which we call the three planes of Space, and a fourth, Time. There is, however, a tendency to draw an unreal distinction between the former three dimensions and the latter, because it happens that our consciousness moves intermittently along the latter from the beginning to the end of our lives.'"
+      },
+      {
+        "pageNumber": 3,
+        "title": "III: The Flight through Time",
+        "content": "I drew a breath, set my teeth, gripped the starting lever with both hands, and went off with a thud. The laboratory grew faint and hazy, then went out like a blown candle.\n\nNight followed day like the flapping of a black wing. The dim suggestion of the laboratory seemed presently to fall away from me, and I saw the sun hopping swiftly across the sky, leaping it every minute, and every minute marking a day. I supposed strange things were happening to the Earth."
+      },
+      {
+        "pageNumber": 4,
+        "title": "Year 802,701 AD",
+        "content": "As I stood there in the gathering dark I thought that in this golden age the old problem of population had at last solved itself. Humanity had achieved ease, comfort, and peace, and had paid for it by dwindling into fragile, child-like beings.\n\nThen, from the deep circular shafts in the earth, came the faint, rhythmic thudding of great underground machines, and I realized with horror that the Eloi were not alone in this twilight world."
+      }
+    ],
+    "tags": [
+      "Science Fiction",
+      "Time Travel",
+      "Futurism",
+      "Classics"
+    ]
+  },
+  {
+    "id": "book-prophet",
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "category": "Philosophy",
+    "year": 1923,
+    "rating": 4.9,
+    "pages": 140,
+    "height": 230,
+    "thickness": 30,
+    "spineColor": "#B08968",
+    "textColor": "#EDE0D4",
+    "coverTexture": "washi",
+    "coverEmblem": "galaxy",
+    "fontStyle": "cinzel",
+    "description": "Kahlil Gibran's poetic masterpiece of prose poetry exploring universal human truths on love, marriage, joy, sorrow, freedom, and self-knowledge.",
+    "tableOfContents": [
+      "The Coming of the Ship",
+      "On Love",
+      "On Joy and Sorrow",
+      "On Work and Craft",
+      "The Farewell"
+    ],
+    "samplePages": [
+      {
+        "pageNumber": 1,
+        "title": "The Coming of the Ship",
+        "content": "Almustafa, the chosen and the beloved, who was a dawn unto his own day, had waited twelve years in the city of Orphalese for his ship that was to return and bear him back to the isle of his birth.\n\nAnd in the twelfth year, on the seventh day of Ielool, the month of reaping, he climbed the hill without the city walls and looked seaward; and he beheld his ship coming with the mist. Then the gates of his heart were flung open, and his joy flew far over the sea."
+      },
+      {
+        "pageNumber": 2,
+        "title": "On Love",
+        "content": "When love beckons to you, follow him, though his ways are hard and steep. And when his wings enfold you yield to him, though the sword hidden among his pinions may wound you.\n\nLove gives naught but itself and takes naught but from itself. Love possesses not nor would it be possessed; for love is sufficient unto love. Think not you can direct the course of love, for love, if it finds you worthy, directs your course."
+      },
+      {
+        "pageNumber": 3,
+        "title": "On Joy and Sorrow",
+        "content": "Your joy is your sorrow unmasked. And the selfsame well from which your laughter rises was oftentimes filled with your tears. And how else can it be?\n\nThe deeper that sorrow carves into your being, the more joy you can contain. Is not the cup that holds your wine the very cup that was burned in the potter's oven? When you are sorrowful look again in your heart, and you shall see that in truth you are weeping for that which has been your delight."
+      },
+      {
+        "pageNumber": 4,
+        "title": "On Work",
+        "content": "You work that you may keep pace with the earth and the soul of the earth. For to be idle is to become a stranger unto the seasons, and to step out of life's procession, that marches in majesty and proud submission towards the infinite.\n\nAnd what is it to work with love? It is to weave the cloth with threads drawn from your heart, even as if your beloved were to wear that cloth. Work is love made visible."
+      }
+    ],
+    "tags": [
+      "Poetry",
+      "Spirituality",
+      "Philosophy",
+      "Classics"
+    ]
+  }
+]

@@ -1,0 +1,487 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-playfair: 'Playfair Display', Georgia, serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-mono-tech: 'JetBrains Mono', monospace;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf8f3;
+    color: #191c19;
+    letter-spacing: -0.01em;
+    transition: background-color 0.8s ease, color 0.8s ease;
+  }
+
+  body.theme-daylight {
+    background-color: #faf8f3;
+    background-image:
+      radial-gradient(ellipse at 80% 0%, rgba(255, 230, 150, 0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 20% 100%, rgba(200, 235, 255, 0.10) 0%, transparent 55%);
+  }
+
+  body.theme-candlelight {
+    background-color: #110e0b;
+    color: #f0e6d0;
+    background-image:
+      radial-gradient(ellipse at 50% 0%, rgba(200, 90, 20, 0.12) 0%, transparent 60%),
+      radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.5) 0%, transparent 60%);
+  }
+}
+
+/* Custom Typography */
+.font-cormorant { font-family: var(--font-cormorant); }
+.font-playfair { font-family: var(--font-playfair); }
+.font-cinzel { font-family: var(--font-cinzel); }
+.font-mono-tech { font-family: var(--font-mono-tech); }
+
+/* 3D Transform Utilities */
+.perspective-1000 { perspective: 1000px; }
+.perspective-1500 { perspective: 1500px; }
+.perspective-2000 { perspective: 2000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ========================================================================= */
+/* ULTRA-SMOOTH 3D BOOK & PAGE FLIP PHYSICS                                  */
+/* ========================================================================= */
+
+/* Book opening keyframe */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInFromTop {
+  from { transform: scaleY(0); transform-origin: top; }
+  to   { transform: scaleY(1); }
+}
+
+@keyframes bookSpreadOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes bookmarkDrop {
+  from { height: 0; opacity: 0; }
+  to   { height: 58%; opacity: 1; }
+}
+
+.book-cover-hinge {
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.9s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Page leaf — driven by JS rAF, no CSS transition needed */
+.page-leaf {
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Dynamic Page Turning Shading */
+.page-turn-shadow {
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.22) 0%,
+    rgba(0,0,0,0.08) 20%,
+    transparent 50%,
+    rgba(0,0,0,0.04) 80%,
+    rgba(0,0,0,0.12) 100%
+  );
+  pointer-events: none;
+}
+
+.page-turn-shadow-reverse {
+  background: linear-gradient(
+    -90deg,
+    rgba(0,0,0,0.22) 0%,
+    rgba(0,0,0,0.08) 20%,
+    transparent 50%,
+    rgba(0,0,0,0.04) 80%,
+    rgba(0,0,0,0.12) 100%
+  );
+  pointer-events: none;
+}
+
+/* ========================================================================= */
+/* DIVERSE COVER TEXTURES & MATERIALS                                        */
+/* ========================================================================= */
+
+.texture-leather {
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(255,255,255,0.14) 0%, transparent 60%),
+    radial-gradient(circle at 2px 2px, rgba(0,0,0,0.12) 1px, transparent 0),
+    linear-gradient(135deg, rgba(0,0,0,0.18) 0%, transparent 50%, rgba(0,0,0,0.25) 100%);
+  background-size: auto, 6px 6px, auto;
+}
+
+.texture-linen {
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.08) 2px, rgba(255,255,255,0.08) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px),
+    linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.15) 100%);
+}
+
+.texture-marbled {
+  background-image: 
+    radial-gradient(ellipse at 20% 20%, rgba(255, 230, 180, 0.25) 0%, transparent 45%),
+    radial-gradient(ellipse at 80% 80%, rgba(200, 160, 255, 0.2) 0%, transparent 45%),
+    linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+.texture-goldleaf {
+  background-image: 
+    radial-gradient(ellipse at center, rgba(251, 191, 36, 0.3) 0%, transparent 70%),
+    linear-gradient(135deg, rgba(254, 240, 138, 0.25) 0%, transparent 50%, rgba(180, 83, 9, 0.3) 100%);
+}
+
+.texture-velvet {
+  background-image: 
+    radial-gradient(circle at 50% 40%, rgba(255,255,255,0.12) 0%, transparent 75%),
+    linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.texture-cyber {
+  background-image: 
+    linear-gradient(125deg, rgba(56, 189, 248, 0.3) 0%, rgba(168, 85, 247, 0.25) 50%, rgba(6, 182, 212, 0.3) 100%),
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.15) 3px, rgba(0,0,0,0.15) 4px);
+}
+
+.texture-botanical {
+  background-image: 
+    radial-gradient(circle at 30% 70%, rgba(74, 120, 80, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(180, 140, 90, 0.25) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.12) 100%);
+}
+
+.texture-washi {
+  background-image: 
+    radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%),
+    radial-gradient(circle at 5px 5px, rgba(220,200,180,0.15) 2px, transparent 0),
+    linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.08) 100%);
+  background-size: auto, 12px 12px, auto;
+}
+
+/* ========================================================================= */
+/* ARCHITECTURAL REAL WOOD BOOKSHELF STYLING                                 */
+/* ========================================================================= */
+
+.real-shelf-unit {
+  background: #fdfbf7;
+  box-shadow: 
+    0 30px 60px -15px rgba(45, 35, 25, 0.08),
+    0 10px 20px -5px rgba(45, 35, 25, 0.04),
+    inset 0 0 0 1px rgba(215, 203, 187, 0.6);
+  transition: all 0.5s ease;
+}
+
+.theme-candlelight .real-shelf-unit {
+  background: #171310;
+  box-shadow: 
+    0 30px 60px -15px rgba(0, 0, 0, 0.7),
+    inset 0 0 0 1px rgba(120, 80, 40, 0.4),
+    0 0 40px rgba(245, 158, 11, 0.04);
+}
+
+.real-shelf-wood {
+  background: linear-gradient(180deg, #dfd2be 0%, #d4c5af 45%, #bead94 100%);
+  box-shadow: 
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1.5px 0 rgba(0, 0, 0, 0.08),
+    0 12px 20px -4px rgba(45, 35, 25, 0.16),
+    0 4px 6px -2px rgba(45, 35, 25, 0.08);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+.theme-candlelight .real-shelf-wood {
+  background: linear-gradient(180deg, #5c3c26 0%, #452a17 45%, #2d180b 100%);
+  box-shadow: 
+    inset 0 1.5px 0 rgba(255, 200, 140, 0.35),
+    inset 0 -1.5px 0 rgba(0, 0, 0, 0.4),
+    0 12px 24px -4px rgba(0, 0, 0, 0.6);
+}
+
+.real-shelf-lip {
+  background: linear-gradient(180deg, #c7b69c 0%, #b8a589 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.5s ease;
+}
+
+.theme-candlelight .real-shelf-lip {
+  background: linear-gradient(180deg, #3d2313 0%, #291509 100%);
+  border-top: 1px solid rgba(255, 200, 140, 0.2);
+}
+
+.real-shelf-shadow {
+  background: linear-gradient(180deg, rgba(35, 25, 15, 0.12) 0%, transparent 100%);
+  transition: background 0.5s ease;
+}
+
+.theme-candlelight .real-shelf-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, transparent 100%);
+}
+
+.shelf-side-pillar {
+  background: linear-gradient(90deg, #d8c9b3 0%, #dfd3bf 50%, #c9b9a1 100%);
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.5), inset -1px 0 0 rgba(0, 0, 0, 0.12);
+  transition: background 0.5s ease;
+}
+
+.theme-candlelight .shelf-side-pillar {
+  background: linear-gradient(90deg, #422817 0%, #4f311e 50%, #361f10 100%);
+  box-shadow: inset 1px 0 0 rgba(255, 200, 140, 0.2), inset -1px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* 3D Realistic Book Spine Details */
+.book-spine-tactile {
+  box-shadow: 
+    inset 2px 0 3px rgba(255, 255, 255, 0.35),
+    inset -2px 0 4px rgba(0, 0, 0, 0.2),
+    0 10px 22px -4px rgba(35, 25, 15, 0.22);
+}
+
+.theme-candlelight .book-spine-tactile {
+  box-shadow: 
+    inset 2px 0 3px rgba(255, 220, 160, 0.25),
+    inset -2px 0 5px rgba(0, 0, 0, 0.4),
+    0 10px 24px -4px rgba(0, 0, 0, 0.45);
+}
+
+.book-contact-shadow {
+  background: radial-gradient(ellipse at center, rgba(30, 20, 10, 0.35) 0%, transparent 70%);
+}
+
+.theme-candlelight .book-contact-shadow {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, transparent 70%);
+}
+
+/* Crisp Paper Texture - Zero Blur, High Clarity */
+.paper-warm-linen {
+  background-color: #fefdf9;
+  background-image:
+    radial-gradient(#e0d8c8 0.6px, transparent 0.6px),
+    radial-gradient(#e0d8c8 0.6px, #fefdf9 0.6px);
+  background-size: 18px 18px;
+  background-position: 0 0, 9px 9px;
+}
+
+/* Deep spine gutter crease with realistic ink shadow */
+.book-gutter-crease {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.02) 25%,
+    rgba(0, 0, 0, 0.10) 44%,
+    rgba(0, 0, 0, 0.20) 49%,
+    rgba(0, 0, 0, 0.26) 50%,
+    rgba(0, 0, 0, 0.20) 51%,
+    rgba(0, 0, 0, 0.10) 56%,
+    rgba(0, 0, 0, 0.02) 75%,
+    transparent 100%
+  );
+}
+
+.page-edge-stripes {
+  background: repeating-linear-gradient(
+    to bottom,
+    #f9f5ed,
+    #f9f5ed 1.5px,
+    #eadece 1.5px,
+    #eadece 3px
+  );
+}
+
+/* ========================================================================= */
+/* 3D BOOKSHELF SELECTION SYSTEM — PULL-OUT / PUSH-BACK                      */
+/* ========================================================================= */
+
+/* Pull-out keyframe — book lifts forward with spring feel */
+@keyframes bookPullOut {
+  0% {
+    transform: translateY(0) translateZ(0) rotateX(0deg) scale(1);
+  }
+  40% {
+    transform: translateY(-38px) translateZ(55px) rotateX(-6deg) scale(1.04);
+  }
+  70% {
+    transform: translateY(-30px) translateZ(44px) rotateX(-4.5deg) scale(1.035);
+  }
+  100% {
+    transform: translateY(-32px) translateZ(48px) rotateX(-5deg) scale(1.035);
+  }
+}
+
+/* Push-back keyframe — book slides back into slot */
+@keyframes bookPushBack {
+  0% {
+    transform: translateY(-32px) translateZ(48px) rotateX(-5deg) scale(1.035);
+  }
+  50% {
+    transform: translateY(-4px) translateZ(6px) rotateX(-0.5deg) scale(1.005);
+  }
+  80% {
+    transform: translateY(2px) translateZ(-2px) rotateX(0.3deg) scale(0.998);
+  }
+  100% {
+    transform: translateY(0) translateZ(0) rotateX(0deg) scale(1);
+  }
+}
+
+/* Gentle float for idle selected book */
+@keyframes selectedFloat {
+  0%, 100% {
+    transform: translateY(-32px) translateZ(48px) rotateX(-5deg) scale(1.035);
+  }
+  50% {
+    transform: translateY(-35px) translateZ(50px) rotateX(-5.2deg) scale(1.037);
+  }
+}
+
+/* Golden ring pulse for selected book base */
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.7; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+}
+
+/* Selected book state */
+.book-spine-selected {
+  animation: bookPullOut 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.book-spine-selected.float-idle {
+  animation: selectedFloat 3s ease-in-out infinite;
+}
+
+/* Push-back state */
+.book-spine-pushing-back {
+  animation: bookPushBack 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Golden glow ring at the base of selected book */
+.book-glow-ring {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(251, 191, 36, 0.8) 0%, rgba(251, 191, 36, 0.3) 40%, transparent 70%);
+  box-shadow: 0 0 16px 4px rgba(251, 191, 36, 0.35), 0 0 32px 8px rgba(251, 191, 36, 0.15);
+  animation: glowPulse 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.theme-candlelight .book-glow-ring {
+  background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.9) 0%, rgba(245, 158, 11, 0.35) 40%, transparent 70%);
+  box-shadow: 0 0 20px 6px rgba(245, 158, 11, 0.4), 0 0 40px 12px rgba(245, 158, 11, 0.18);
+}
+
+/* Depth shadow — deeper when pulled out */
+.book-depth-shadow {
+  position: absolute;
+  bottom: -10px;
+  left: -4px;
+  right: -4px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(30, 20, 10, 0.5) 0%, transparent 65%);
+  filter: blur(3px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.theme-candlelight .book-depth-shadow {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, transparent 65%);
+}
+
+/* Selected action dock — persistent, not just hover */
+.book-action-dock-selected {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  backdrop-filter: blur(4px);
+}
+
+/* Spotlight shimmer on pulled-out book */
+.book-spotlight-shimmer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    transparent 35%,
+    transparent 65%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.book-spine-selected .book-spotlight-shimmer {
+  opacity: 1;
+}
+
+/* Put-back hint label */
+@keyframes hintBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-3px); }
+}
+
+.put-back-hint {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fbbf24;
+  white-space: nowrap;
+  animation: hintBounce 2s ease-in-out infinite;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* 3D Perspective shelf container */
+.shelf-3d-perspective {
+  perspective: 1200px;
+  perspective-origin: 50% 40%;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8cebf;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bfb29e;
+}

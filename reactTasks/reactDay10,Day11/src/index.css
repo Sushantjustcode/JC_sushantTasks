@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
+  color: #111;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+
+/* ── Layout ── */
+.shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.split-left,
+.split-right {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* ── Buttons ── */
+.btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.btn.yellow {
+  background: #f0c743;
+  border-color: #f0c743;
+}
+.btn.red {
+  background: #fce4e4;
+  color: #c00;
+  border-color: #f5c5c5;
+}
+.btn.small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.row-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Card list ── */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+.card-row strong {
+  display: block;
+  font-size: 16px;
+}
+.card-row .sub {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ── Form fields ── */
+.split-right label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #333;
+}
+.split-right input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.split-right input:focus {
+  outline: none;
+  border-color: #f0c743;
+}
+.split-right hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+.color-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.color-row label {
+  flex: 1;
+  min-width: 90px;
+}
+.color-row input[type="color"] {
+  width: 100%;
+  height: 38px;
+  padding: 2px 4px;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* ── Section editor ── */
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.section-box {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+/* ── Quill overrides (keep minimal) ── */
+.ql-toolbar {
+  border-radius: 6px 6px 0 0;
+}
+.ql-container {
+  min-height: 120px;
+  border-radius: 0 0 6px 6px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Export toolbar ── */
+.export-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.export-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-weight: 600;
+}
+
+.export-select-wrap select {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 4px 0;
+  font: inherit;
+}
+
+/* ── Print ── */
+@media print {
+  .top-bar,
+  .split-right,
+  .card-list,
+  .row-btns,
+  .export-toolbar {
+    display: none !important;
+  }
+  .split {
+    display: block;
+  }
+  .split-left {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}

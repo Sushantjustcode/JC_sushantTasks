@@ -1,0 +1,157 @@
+{
+  "window.zoomLevel": -1,
+
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+
+  "workbench.colorTheme": "Minimal Fog Dark",
+  "workbench.productIconTheme": "Default",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "git.enableSmartCommit": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "security.promptForLocalFileProtocolHandling": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  "editor.fontFamily": "Cascadia Code, JetBrains Mono, Fira Code, monospace",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.55,
+  "editor.fontWeight": "450",
+  "editor.fontLigatures": true,
+
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": true,
+
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.maxColumn": 120,
+  "editor.minimap.showSlider": "always",
+
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.horizontal": "visible",
+  "editor.scrollbar.verticalScrollbarSize": 14,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+
+  "editor.breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
+
+  "editor.folding": true,
+  "editor.foldingHighlight": true,
+
+  "editor.renderWhitespace": "selection",
+
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.matchBrackets": "always",
+  "editor.linkedEditing": true,
+
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+
+  "editor.suggestSelection": "first",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.parameterHints.enabled": true,
+
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.fontSize": 14,
+
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 14,
+  "workbench.tree.renderIndentGuides": "onHover",
+
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#00E5FF",
+
+    "editor.selectionBackground": "#164E63",
+    "editor.selectionHighlightBackground": "#164E6355",
+
+    "editor.lineHighlightBackground": "#FFFFFF08",
+    "editor.lineHighlightBorder": "#00E5FF18",
+
+    "editorBracketHighlight.foreground1": "#00E5FF",
+    "editorBracketHighlight.foreground2": "#A78BFA",
+    "editorBracketHighlight.foreground3": "#34D399",
+    "editorBracketHighlight.foreground4": "#FBBF24",
+    "editorBracketHighlight.foreground5": "#FB7185",
+    "editorBracketHighlight.foreground6": "#60A5FA",
+
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FF4D6D",
+
+    "editorIndentGuide.background1": "#FFFFFF08",
+    "editorIndentGuide.activeBackground1": "#00E5FF55",
+
+    "editorWhitespace.foreground": "#475569",
+
+    "scrollbarSlider.background": "#00E5FF25",
+    "scrollbarSlider.hoverBackground": "#00E5FF55",
+    "scrollbarSlider.activeBackground": "#00E5FF80",
+
+    "minimapSlider.background": "#00E5FF30",
+    "minimapSlider.hoverBackground": "#00E5FF55",
+    "minimapSlider.activeBackground": "#00E5FF80"
+  },
+
+  "powermode.enabled": true,
+  "powermode.combo.location": "off",
+  "powermode.shake.intensity": 0.5,
+  "powermode.explosions.duration": 400,
+  "powermode.explosions.frequency": 7
+}

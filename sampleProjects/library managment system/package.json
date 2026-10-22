@@ -1,0 +1,14 @@
+{
+  "name": "library-managment-system",
+  "version": "1.0.0",
+  "description": "Tactile 3D Library Management System with realistic book pickup, opening/closing, bookshelf display, and JSON persistence",
+  "scripts": {
+    "server": "node backend/server.js",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/server.js"
+  },
+  "keywords": ["library", "react", "threejs", "bookshelf", "3d-book"],
+  "author": "",
+  "license": "ISC"
+}
