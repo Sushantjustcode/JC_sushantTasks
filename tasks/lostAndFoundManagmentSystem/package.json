@@ -1,0 +1,14 @@
+{
+  "name": "lostAndFoundManagmentSystem",
+  "version": "1.0.0",
+  "description": "Node.js backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mongoose": "^9.11.3"
+  }
+}
